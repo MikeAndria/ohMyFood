@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'shrikhand';
+    src: url("../font/Shrikhand/Shrikhand-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+   font-family: "Roboto";
+   margin:0px;
+   padding: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:300px){
+    header  .logo{
+        width: 100%;
+        height: 70px;
+    }
+    header > .logo {
+        display: flex;
+        
+    }
+ 
+    header > .logo  .text-logo p{
+        font-size:larger;
+        font-weight: bolder;
+        font-style: italic;
+        margin-top: 0px;
+        font-size: xx-large;
+        margin-left: 50%;
+        padding-top: 10px;
+        font-family: 'Shrikhand';
+    }
+    header > .logo > .icone-retour .arrow-icone{
+        font-size:larger;
+        font-weight: bolder;
+        font-style: italic;
+        margin-top: 0px;
+        font-size: xx-large;
+        margin-left: 100%;
+        padding-top: 15px;
+        font-family: 'Shrikhand';
+        color: rgb(51, 47, 47);
+    }
+
+    .image{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+   }
+   .menus{
+       position: absolute;
+       width: 100%;
+       height: max-content;
+       background-color:rgb(255, 255, 255);
+       margin-top: -100px;
+       border-top-right-radius: 50px;
+       border-top-left-radius: 50px;
+       box-sizing: border-box;
+       margin-left: 0px;
+
+   }
+   @keyframes menu-apparition {
+    from{
+        opacity: 0;
+        margin-top: 0px;
+    }
+    to{
+        opacity: 1;
+        margin-top: -100px;
+    }
+    
+   }
+   .image > img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+
+       
+   }
+   main{
+        width: 100%;
+        height: max-content;
+        display: block;
+   }
+
+    .titre-icone{
+        display: flex;
+        flex-direction: row;
+       padding-left: 20px;
+       
+    }
+    .titre > h2{
+        font-family:"shrikhand";
+    }
+    .titre-icone > .icone >  #icone{
+        height: 30px;
+        margin-top: 20px;
+        position: absolute;
+        left:85%;
+        
+    }
+    .icone >  .full-heart{
+        display: none;
+        cursor: pointer;
+    }
+    .icone:hover > .full-heart{
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .titre-icone > .titre{
+        font-style: italic;
+        
+    }
+    .categorie{
+        margin-bottom: 50px;
+    }
+    .categorie > p{
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+    .container{
+        margin-left: 5%;
+        margin-bottom: 3%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 5px rgb(133, 133, 133) ;
+        margin-top: 20px;
+        border-radius: 20px ;
+        animation: apparition  0.5s;
+        background-color: white;
+    }
+    .container > .div1{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1.5%;
+        transition: 0.5s;
+
+    }
+    .container > .div1 > div{
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container > .div1 h3,  .container > .div1 p {
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+    }
+    a:hover > .container > .div1 > p{
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+       
+       
+    }
+    hr{
+        width: 40px;
+        margin-left: 5%;
+       
+    }
+    .container > .div1 > div > div > p{
+        margin-top: 0px;
+    }
+    .container > .div2{
+        display: flex;
+        justify-content: center;
+        width: 0%;
+        background-color:rgb(193, 221, 223);
+        padding-bottom: 5%;
+        transition: 0.5s;
+        overflow: hidden;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #menu:hover > .container > .div1 {
+        width: 80%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .div1 .s-title, .div1 .title{
+        width: 80%; 
+    }
+
+    .s-title p, .title h3{
+        text-overflow:ellipsis;
+        overflow: hidden;
+        
+    }
+    .div1 .price{
+        padding-right: 2%;
+    }
+    a:hover > .container > .div2 {
+        width: 20%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes apparition {
+        from{
+            opacity:0;
+            margin-top: 30px;
+        }
+        to{
+            opacity: 1;
+            margin-top: 20px;
+        }
+        
+    }
+    
+    #icone{
+        padding: 5px;
+    }
+
+    .container > .div2 > div{
+        width: 25px;
+        height: 25px;
+        margin-top: 40px;
+        color: white;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .container:hover > .div2 > div{
+        animation-name: rotation;
+        animation-duration: 0.5s;
+    }
+    #btn-commander{
+        box-sizing: border-box;
+        width: max-content;
+        height: max-content;
+        padding: 15px 35px 15px 35px;
+        color: white;
+        border-radius: 30px;
+        background-color: cornflowerblue;
+        box-shadow: 2px 2px 5px rgb(1, 3, 8);
+    }
+    .btn-box{
+        width: max-content;
+        margin-bottom: 80px;
+        transition: 0.5s;
+    }
+  .btn-box:hover{
+        scale: 1.1;
+    }
+    footer{
+        width: 100%;
+        height:max-content;
+        background-color: rgba(53,53,53);
+        padding:20px 0px 40px 30px; 
+        color: white;
+    }
+    footer .logo{
+        font-size:x-large;
+        font-family: 'shrikhand';
+        
+    }
+    footer > .menu{
+        margin-top:20px;
+        
+    }
+    footer > .menu > div{
+        display: flex;
+        flex-direction: row;
+    }
+    footer > .menu > div > div{
+        margin-left: 10px;
+        margin-bottom: 5px ;
+        
+    }
+    footer > .menu a{
+        color: white;
+        
+    }
+}

@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'shrikhand';
+    src: url("../font/Shrikhand/Shrikhand-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+   font-family: "Roboto";
+   margin:0px;
+   padding: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (min-width: 300px){
+    header  .logo{
+        width: 100%;
+        height: 60px;
+    }
+    header > .logo >p{
+        font-size:larger;
+        font-weight: bolder;
+        font-style: italic;
+        margin-top: 0px;
+        font-size: xx-large;
+        text-align: center;
+        padding-top: 10px;
+        font-family: 'shrikhand';
+    }
+    header  .localisation{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(234,234,234);
+    }
+    header > .localisation > #icone-location{
+        margin-top: 10px;
+        height: 20px;
+    }
+    header > .localisation > div{
+        margin-left: 15px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    header  .title{
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+        height: 300px;
+        background-color: rgba(246,246,246);
+        
+    }
+
+    header > .title > h1{
+        margin-top: 0px;
+        padding: 0px 40px 0px 40px;
+    }
+    header > .title  a{
+        background-color: rgb(163, 91, 219);
+        width:max-content;
+        padding: 15px;
+        border-radius: 20px;
+        transition: 0.5s;
+        color: white;
+        box-shadow: 2px 2px 5px rgb(133, 133, 133) ;
+        ;
+    }
+    header > .title > a:hover{
+        border-radius: 22px;
+        font-size:large;
+
+    }
+    header > .title > p{
+        margin-top: 0px;
+        padding: 0px 15px 0px 15px;
+        margin-bottom: 50px;
+    }
+    header  .fonctionnement{
+        padding-top: 30px;
+        width: 100%;
+        height: 350px;
+
+    }
+    header > .fonctionnement > h2{
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+    header > .fonctionnement > .menus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header > .fonctionnement > .menus > a {
+        width: 85%;
+        height: 71px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        color: black;
+        transition: 0.5s;
+        box-sizing: border-box;
+        
+    }
+    header > .fonctionnement > .menus > a:hover > .menu{
+        background-color: rgba(13, 84, 216, 0.123);
+    }
+    header > .fonctionnement > .menus > a:hover #icone{
+        color: blueviolet;
+    }
+    header > .fonctionnement > .menus > a:hover{
+        width: 85%;
+        height: 71px;
+        margin-left: 8%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    header > .fonctionnement > .menus > a > .menu{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        background-color: azure;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        color: black;
+        padding-left: 35px ;
+        box-shadow: 2px 2px 5px rgb(133, 133, 133) ;
+
+    }
+    header > .fonctionnement > .menus > a > .menu #icone-number{
+        position: absolute;
+        left:-15px;
+        top:28%;
+        color:rgb(255, 255, 255);
+        background-color: rgba(134, 85, 180, 0.993);
+        border-radius: 50%;
+        padding:5px 10px 5px 10px;
+        font-size: 15px;
+        
+    }
+    header > .fonctionnement > .menus > a > .menu> div{
+        margin-left: 30px;
+    }
+    main .resultat{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:rgba(246,246,246);
+    
+    
+    }
+    .resultat .cartes{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 40px ;
+        align-items: center;
+    }
+    .resultat > h2{
+        margin-left: 5%;
+    }
+    .cartes > a{
+        transition: width 0.5s;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: max-content;
+        background-color: white;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 10px rgb(49, 9, 9) ;
+    }
+    .cartes > a:hover{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1.05);
+        transition: 0.5s;
+        height: max-content;
+        background-color: white;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 10px rgb(49, 9, 9) ;
+    }
+    .cartes > a > .carte > .image{
+        border-radius: 20px;
+        width: 100%;
+        height: 200px;
+
+    }
+    .cartes > a > .carte > .image > img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .carte > .description{
+    padding:0px 15px 0px 15px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carte > .description p {
+        margin-top: 5px;
+    }
+    .carte > .description h3{
+        margin-bottom: 0px;
+    }
+    .carte > .description #icone{
+        padding-top: 20px;
+        height: 30px;
+    }
+    .icone-heart{
+        cursor: pointer;
+
+    }
+    .empty-heart{
+        position: absolute;
+        color: rgba(134, 85, 180, 0.993);
+    }
+    .full-heart{
+        color: white ;
+        
+    }
+
+    .icone-heart:hover > .full-heart{
+        color:rgba(134, 85, 180, 0.993);
+    }   
+    footer{
+        width: 100%;
+        height:max-content;
+        background-color: rgba(53,53,53);
+        padding:20px 0px 40px 30px; 
+        color: white;
+    }
+    footer .logo{
+        font-size: x-large;
+        font-weight:bolder;
+        font-style: italic;
+        font-family: 'shrikhand';
+        
+    }
+    footer > .menu{
+        margin-top:20px;
+        
+    }
+    footer > .menu > div{
+        display: flex;
+        flex-direction: row;
+    }
+    footer > .menu > div > div{
+        margin-left: 10px;
+        margin-bottom: 5px ;
+        
+    }
+    footer > .menu a{
+        color: white;
+        
+    }
+
+}
