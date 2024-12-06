@@ -1,1 +1,1 @@
-# Clone it or Dwnload and test it!
+# Clone it or Download and test it!
